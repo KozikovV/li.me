@@ -8,6 +8,9 @@ body {
 a {
   font-family: 'Montserrat', sans-serif; }
 
+a:focus {
+  opacity: .5; }
+
 .list-reset {
   padding-left: 0;
   margin: 0;
@@ -46,7 +49,8 @@ img {
   vertical-align: super;
   position: absolute;
   right: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background-image 1s; }
 
 header .container .row {
   text-align: center;
@@ -62,7 +66,7 @@ header .container .row {
 
 header .container .scroll {
   position: fixed;
-  transition: all .5;
+  transition: background-color .8s;
   background-color: #fff;
   z-index: 110000; }
   header .container .scroll .logo img:first-child {
@@ -71,15 +75,16 @@ header .container .scroll {
     display: none; }
   header .container .scroll .menu-btn {
     cursor: pointer;
+    transition: background-image 1s;
     background-image: url(../images/btn-burger-green.png); }
 
 header .container .open-nav .cross {
   background-image: url(../images/btn-cross.png);
-  transition: top 1s ease-out 0.5s; }
+  transition: background-image 1s; }
 
 .scroll .cross {
   background-image: url(../images/btn-cross.png);
-  transition: top 1s ease-out 0.5s; }
+  transition: background-image 1s; }
 
 .header-nav {
   text-align: center;
@@ -131,7 +136,7 @@ header .container .open-nav .cross {
   max-width: 240px;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 10px; }
+  overflow: hidden; }
   .joinUs ul li a {
     color: #24d000; }
   .joinUs ul li:first-child {
@@ -171,7 +176,8 @@ header .container .open-nav .cross {
   left: 0;
   right: 0;
   z-index: 9;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 30px 10px; }
 
 .language ul.dropdown {
   display: block;
@@ -186,7 +192,8 @@ header .container .open-nav .cross {
 
 header .container .open-nav {
   background-color: #fff;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  transition: background-color .8s; }
   header .container .open-nav .logo img:first-child {
     display: block; }
   header .container .open-nav .logo img:last-child {

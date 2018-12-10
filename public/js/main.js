@@ -1,5 +1,5 @@
 $(window).scroll(function(){
-    if ($(window).scrollTop() > 1) {
+    if ($(window).scrollTop() > 0) {
         $('.row').addClass('scroll');
     }
     else {
