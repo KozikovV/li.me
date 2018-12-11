@@ -100,7 +100,15 @@ header
 
 .header-nav
     text-align: center
-    display: none
+    position: fixed
+    right: 0
+    left: 0
+    top: 77px
+    background-color: #FFF
+    padding-top: 20px
+    z-index: 99999
+    transform: scale(0)
+    transition: transform .8s
     ul
         li
             text-align: center
@@ -225,14 +233,8 @@ header
 
 
 .grow
-    display: block
-    position: fixed
-    right: 0
-    left: 0
-    top: 77px
-    background-color: #FFF
-    padding-top: 20px
-    z-index: 99999
+    transform: scale(1)
+    
         
 /*/////////////BANNER////////////////*/
 

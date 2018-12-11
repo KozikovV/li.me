@@ -94,7 +94,19 @@ header .container .open-nav .cross {
 
 .header-nav {
   text-align: center;
-  display: none; }
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 77px;
+  background-color: #FFF;
+  padding-top: 20px;
+  z-index: 99999;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s; }
   .header-nav ul li {
     text-align: center;
     margin-bottom: 40px; }
@@ -209,14 +221,8 @@ header .container .open-nav {
     display: none; }
 
 .grow {
-  display: block;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 77px;
-  background-color: #FFF;
-  padding-top: 20px;
-  z-index: 99999; }
+  -webkit-transform: scale(1);
+  transform: scale(1); }
 
 /* */
 .banner {
