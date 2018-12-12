@@ -8,10 +8,10 @@
   },
   "author": "Kozikov",
   "license": "ISC",
-  "dependencies": {
-    "gulp": "github:gulpjs/gulp#v4.0.0-alpha.3"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "github:gulpjs/gulp#v4.0.0-alpha.3",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-watch": "^5.0.1",
